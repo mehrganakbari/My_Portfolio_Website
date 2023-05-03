@@ -6,7 +6,7 @@ function NavBar() {
     mobileMenu.classList.toggle("hidden");
   };
   return (
-    <nav className="mx-auto container max-w-[1445px] z-50 fixed">
+    <nav className="mx-auto container max-w-[1445px] z-50">
       <div className="bg-slate-800 text-white mx-5 mt-10 mb-5 py-3 px-5 shadow rounded-full flex justify-between items-center">
         <p className="text-yellow-400">Hello World!</p>
         <ul className="hidden sm:flex">
@@ -50,7 +50,7 @@ function NavBar() {
           </svg>
         </button>
       </div>
-      <div className="mobileMenu mx-5 py-3 px-5 bg-slate-800 sm:hidden rounded-xl">
+      <div className="mobileMenu mx-5 py-3 px-5 bg-slate-800 hidden sm:hidden rounded-xl">
         <ul className="">
           <a href="#home">
             <li className="flex text-white py-2 px-5 gap-2 rounded-md transition-all duration-300 hover:text-yellow-400 hover:bg-gray-900">

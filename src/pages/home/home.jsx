@@ -1,12 +1,14 @@
 import "../../index.css";
 import NavBar from "../../layout/navbar/navbar";
+import Header from "./header/header";
 
 function Home() {
   return (
-    <header id="home">
+    <>
       <NavBar />
-    </header>
-  )
+      <Header />
+    </>
+  );
 }
 
-export default Home
+export default Home;
