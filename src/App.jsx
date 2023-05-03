@@ -1,9 +1,9 @@
 import "./index.css";
-
-export default function App() {
+import Home from "./pages/home/home";
+function App() {
   return (
-    <h1 className="text-3xl underline font">
-      Hello world! 
-    </h1>
+    <Home />
   )
 }
+
+export default App
