@@ -1,0 +1,13 @@
+{
+    "ui": [{
+            "title": "Adobe xd",
+            "imageSrc" : "/src/assets/icons/xd.png",
+            "width": "90%"
+        },
+        {
+            "title": "Figma",
+            "imageSrc" : "/src/assets/icons/figma.png",
+            "width": "80%"
+        }
+    ]
+}

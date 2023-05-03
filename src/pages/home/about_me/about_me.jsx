@@ -8,9 +8,9 @@ function AboutMe() {
         <p className="text-white text-2xl text-center">About Me</p>
         <div className="grid lg:grid-cols-2 pt-10">
           <div className="">
-            <img src={ProfilePic} alt="" className="mx-auto px-5 xs:max-w-[400px]" />
+            <img src={ProfilePic} alt="" className="mx-auto lg:mx-5 px-5 xs:max-w-[400px]" />
           </div>
-          <div className="text-white lg:px-10 lg:pr-10 mt-10 lg:mt-0 text-center lg:text-start">
+          <div className="text-white lg:px-10 mt-10 lg:mt-0 text-center lg:text-start">
             <p className="text-sm xl:text-lg px-5 xs:px-0 xs:max-w-[400px] xl:max-w-[450px] mx-auto">
               Hello, I am Mehrgan Akbari, I am a Freelance Web Designer and
               Freelance ui & ux Designer from rasht, iran
