@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "../../index.css";
 
 function NavBar() {
@@ -10,11 +11,11 @@ function NavBar() {
       <div className="bg-slate-800 text-white mx-5 mt-10 mb-5 py-3 px-5 shadow rounded-full flex justify-between items-center">
         <p className="text-yellow-400">Hello World!</p>
         <ul className="hidden sm:flex">
-          <a href="#">
+          <Link to="/">
             <li className="px-5 transition-all duration-300 hover:text-yellow-400">
               Home
             </li>
-          </a>
+          </Link>
           <a href="#about">
             <li className="px-5 transition-all duration-300 hover:text-yellow-400">
               About
@@ -25,16 +26,18 @@ function NavBar() {
               Portfolios
             </li>
           </a>
+          <a href="#Blogs">
+            <li className="px-5 transition-all duration-300 hover:text-yellow-400">
+              Blogs
+            </li>
+          </a>
           <a href="#Contact">
             <li className="px-5 transition-all duration-300 hover:text-yellow-400">
               Contact
             </li>
           </a>
         </ul>
-        <button
-          onClick={handelResponsive}
-          id="navarBtn"
-          className="sm:hidden">
+        <button onClick={handelResponsive} id="navarBtn" className="sm:hidden">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -104,6 +107,24 @@ function NavBar() {
                 />
               </svg>
               <p>Portfolios</p>
+            </li>
+          </a>
+          <a href="#blog">
+            <li className="flex text-white py-2 px-5 gap-2 rounded-md transition-all duration-300 hover:text-yellow-400 hover:bg-gray-900">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth="1.5"
+                stroke="currentColor"
+                className="w-6 h-6">
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z"
+                />
+              </svg>
+              <p>Blogs</p>
             </li>
           </a>
           <a href="#Contact">

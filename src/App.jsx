@@ -1,9 +1,46 @@
 import "./index.css";
+import {
+  RouterProvider,
+  createBrowserRouter,
+  Outlet,
+} from "react-router-dom";
 import Home from "./pages/home/home";
-function App() {
-  return (
-    <Home />
-  )
+import OopBlog from "./pages/blogs/oop/oop";
+import ReactBlog from "./pages/blogs/react/react";
+import ReactVsVueBlog from "./pages/blogs/react_vue/react_vue";
+
+export default function App() {
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      element: <NavbarWrapper />,
+      children: [
+        {
+          path: "/",
+          element: <Home />,
+        },
+        {
+          path: "/what-is-oop",
+          element: <OopBlog />,
+        },
+        {
+          path: "/what-is-react",
+          element: <ReactBlog />,
+        },
+        {
+          path: "/react-vs-vue",
+          element: <ReactVsVueBlog />,
+        },
+      ],
+    },
+  ]);
+  return <RouterProvider router={router}></RouterProvider>;
 }
 
-export default App
+function NavbarWrapper() {
+  return (
+    <>
+      <Outlet />
+    </>
+  );
+}
