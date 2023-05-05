@@ -1,7 +1,7 @@
 import "../../../index.css";
 import ProfilePic from "/src/assets/images/3.jpg";
 
-function ContactPic() {
+function ContactCards() {
   return (
     <div className="my-5 px-5 mx-auto flex flex-col md:flex-row gap-5 items-center container max-w-[1440px]">
         <img src={ProfilePic} alt="" className="w-52 rounded-full border-2 border-slate-800" />
@@ -10,4 +10,4 @@ function ContactPic() {
   );
 }
 
-export default ContactPic;
+export default ContactCards;
