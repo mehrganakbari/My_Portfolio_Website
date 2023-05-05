@@ -1,10 +1,13 @@
 import "../../../index.css";
+import BackNavBar from "../../../layout/backnavbar/backnavbar";
+import Footer from "../../../layout/footer/footer";
 
 function ReactVsVueBlog() {
   return (
-    <div className="py-10 mx-auto container max-w-[1440px]">
-
-    </div>
+    <>
+      <BackNavBar />
+      <Footer />
+    </>
   );
 }
 

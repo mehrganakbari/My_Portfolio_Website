@@ -26,16 +26,11 @@ function NavBar() {
               Portfolios
             </li>
           </a>
-          <a href="#Blogs">
-            <li className="px-5 transition-all duration-300 hover:text-yellow-400">
-              Blogs
-            </li>
-          </a>
-          <a href="#Contact">
+          <Link to="/contact-me">
             <li className="px-5 transition-all duration-300 hover:text-yellow-400">
               Contact
             </li>
-          </a>
+          </Link>
         </ul>
         <button onClick={handelResponsive} id="navarBtn" className="sm:hidden">
           <svg
@@ -55,7 +50,7 @@ function NavBar() {
       </div>
       <div className="mobileMenu mx-5 py-3 px-5 bg-slate-800 hidden sm:hidden rounded-xl">
         <ul className="">
-          <a href="#home">
+          <Link to="/">
             <li className="flex text-white py-2 px-5 gap-2 rounded-md transition-all duration-300 hover:text-yellow-400 hover:bg-gray-900">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -72,7 +67,7 @@ function NavBar() {
               </svg>
               <p>Home</p>
             </li>
-          </a>
+          </Link>
           <a href="#about">
             <li className="flex text-white py-2 px-5 gap-2 rounded-md transition-all duration-300 hover:text-yellow-400 hover:bg-gray-900">
               <svg
@@ -127,7 +122,7 @@ function NavBar() {
               <p>Blogs</p>
             </li>
           </a>
-          <a href="#Contact">
+          <Link to="/contact-me">
             <li className="flex text-white py-2 px-5 gap-2 rounded-md transition-all duration-300 hover:text-yellow-400 hover:bg-gray-900">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -144,7 +139,7 @@ function NavBar() {
               </svg>
               <p>Contact</p>
             </li>
-          </a>
+          </Link>
         </ul>
       </div>
     </nav>

@@ -8,6 +8,7 @@ import Home from "./pages/home/home";
 import OopBlog from "./pages/blogs/oop/oop";
 import ReactBlog from "./pages/blogs/react/react";
 import ReactVsVueBlog from "./pages/blogs/react_vue/react_vue";
+import ContactMe from "./pages/contact_me/contcat_me";
 
 export default function App() {
   const router = createBrowserRouter([
@@ -18,6 +19,10 @@ export default function App() {
         {
           path: "/",
           element: <Home />,
+        },
+        {
+          path: "/contact-me",
+          element: <ContactMe />,
         },
         {
           path: "/what-is-oop",

@@ -8,7 +8,7 @@ function Blogs() {
   return (
     <div id="blog" className="py-10 mx-auto container max-w-[1440px]">
       <p className="text-white text-2xl text-center">Blogs</p>
-      <div className="grid grid-cols-3 gap-5 mx-auto max-w-[1024px] my-10 px-3">
+      <div className="grid sm:grid-cols-2 xl:grid-cols-3 gap-5 mx-auto max-w-[1024px] my-10 px-3">
         <Link to="/what-is-oop">
           <div className="text-white rounded-lg border border-slate-800">
             <img src={oop} alt="" className="rounded-t-lg" />

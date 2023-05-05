@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "../../../index.css";
 import ProfilePic from "/src/assets/images/profile.png";
 
@@ -43,11 +44,11 @@ function AboutMe() {
                 </p>
               </div>
               <div className="flex gap-2 justify-center lg:justify-start pt-10 lg:py-3">
-                <a href="#contact">
+                <Link to="/contact-me">
                   <button className="bg-yellow-400 text-white px-5 py-2 rounded-lg transition-all duration-300 box-border hover:bg-transparent border border-white">
                     Contact Me
                   </button>
-                </a>
+                </Link>
                 <br />
                 <a href="">
                   <button className="hover:bg-yellow-400 text-white px-5 py-2 rounded-lg transition-all duration-300 box-border bg-transparent border border-white">
