@@ -1,9 +1,5 @@
 import "./index.css";
-import {
-  RouterProvider,
-  createBrowserRouter,
-  Outlet,
-} from "react-router-dom";
+import { RouterProvider, createBrowserRouter, Outlet } from "react-router-dom";
 import Home from "./pages/home/home";
 import OopBlog from "./pages/blogs/oop/oop";
 import ReactBlog from "./pages/blogs/react/react";
